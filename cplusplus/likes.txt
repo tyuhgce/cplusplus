@@ -1,0 +1,5 @@
+Dennis_Ritchie Bjarne_Stroustrup Linus_Torvalds
+Bjarne_Stroustrup Dennis_Ritchie Steve_Wozniak
+Linus_Torvalds Dennis_Ritchie Bjarne_Stroustrup
+Bill_Gates Dennis_Ritchie Bjarne_Stroustrup Steve_Wozniak
+Steve_Wozniak

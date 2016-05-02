@@ -162,8 +162,8 @@ public:
 			for (auto j = size_type(1 + i); j < _row_size; ++j)
 				if (is_someone_likable(j) && _vertexs[i*_row_size + j] != _vertexs[j*_row_size + i])
 					vertex.push_back((_vertexs[i*_row_size + j]) ? j : i);
-		vertex.unique([](const int& lhs, const int& rhs) {return lhs < rhs; });
-
+		vertex.sort();
+		vertex.unique();
 		list<string> result;
 		while (!vertex.empty()) {
 			result.push_back(_names[vertex.back()]);

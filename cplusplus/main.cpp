@@ -1,3 +1,7 @@
+/*
+см. README.md
+*/
+
 #include <iostream>
 #include <string>
 #include <fstream>

@@ -76,6 +76,13 @@ class Graph
 		}
 		return 0;
 	}
+	bool is_someone_likable(int index) const
+	{
+		for (auto i = size_type(0); i < _row_size; ++i)
+			if (_vertexs[i*_row_size + index] != false)
+				return true;
+		return false;
+	}
 
 public:
 	Graph() = default;
@@ -99,13 +106,6 @@ public:
 		_names.clear();
 		_row_size = 0;
 		_state = false;
-	}
-	bool is_someone_likable(int index) const
-	{
-		for (auto i = size_type(0); i < _row_size; ++i)
-			if (_vertexs[i*_row_size + index] != false)
-				return true;
-		return false;
 	}
 	int fill_graph(const char* name_of_vertex, const char* adjacency_relation)
 	{
